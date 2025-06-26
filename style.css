@@ -13,11 +13,16 @@
   font-style: normal;
 }
 
+:root {
+  --font-text: 'UnifrakturCook', cursive;
+  --font-title: 'IM Fell English SC', serif;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'IM Fell English SC', serif;
+  font-family: var(--font-title);
   background: url('./assets/img/background.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #f5e6c5;
@@ -38,7 +43,7 @@ body, html {
 }
 
 .title {
-  font-family: 'IM Fell English SC', cursive;
+  font-family: var(--font-title);
   font-size: 5rem;
   color: #ffcc00;
   margin-bottom: 1rem;
@@ -70,7 +75,7 @@ body, html {
 }
 
 .slogan {
-  font-family: 'UnifrakturCook', cursive;
+  font-family: var(--font-text);
   font-size: 1.5rem;
   margin-bottom: 2rem;
   font-style: italic;
@@ -79,7 +84,7 @@ body, html {
 
 .links a {
   display: inline-block;
-  margin: 0 1rem;
+  margin: 1rem;
   padding: 0.8rem 1.2rem;
   color: #fff;
   background: #550000;
@@ -132,4 +137,25 @@ body, html {
       0 0 30px #ff3333,
       inset 0 0 12px #770000;
   }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f5e6c5;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#copyright {
+  font-family: var(--font-text);
+  font-size: 1rem;
+}
+
+#year{
+  font-size: 1.8rem;
 }
