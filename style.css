@@ -139,6 +139,27 @@ body, html {
   }
 }
 
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 1rem;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+  p {
+    margin: 0 20px;
+  }
+}
+
+.partner:hover {
+  opacity: 1;
+}
+
+.partner-logo {
+  max-height: 50px;
+  filter: drop-shadow(0 0 6px #000);
+}
+
 footer {
   position: absolute;
   bottom: 0;
